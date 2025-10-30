@@ -1,0 +1,221 @@
+/* assets/css/style.css */
+
+/* 1. GLOBAL STYLES & BODY */
+body {
+    background-color: #fdf2f8; /* Pink soft yang sangat muda untuk background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #521b41; /* Warna teks utama yang sedikit lebih gelap dari pink */
+}
+
+/* 2. NAVBAR & FOOTER */
+/* Pastikan navbar menggunakan pink tua */
+.navbar {
+    background-color: #ffd0e0 !important; /* Pink tua yang elegan */
+}
+
+/* Link teks di navbar */
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: #a86089 !important; /* Pink muda untuk teks agar kontras */
+}
+
+/* Warna teks saat hover di navbar */
+.navbar .nav-link:hover {
+    color: #ffffff !important; /* Menjadi putih saat hover */
+}
+
+/* Footer */
+footer {
+    background-color: #ffd8e5 !important; /* Sama dengan navbar */
+    color: #a86089; /* Teks pink muda */
+}
+
+/* 3. CARDS (Halaman Index) */
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(233, 30, 99, 0.1); /* Bayangan pink saat hover */
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    color: #a86379; /* Pink tua yang elegan */
+    font-weight: 600;
+}
+
+.card-text {
+    color: #521b41; /* Warna teks yang konsisten dengan body */
+}
+
+/* Badge di dalam kartu */
+.card .badge.bg-secondary {
+    background-color: #f9a8d4 !important; /* Pink pastel untuk badge */
+    color: #831843 !important; /* Teks gelap agar mudah dibaca */
+}
+
+/* Harga di dalam kartu */
+.price-tag {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #be185d; /* Pink medium untuk harga */
+}
+
+/* 4. BUTTONS */
+/* Tombol Sukses (Tambah, Simpan) */
+.btn-success {
+    background-color: #ec4899; /* Pink cerah */
+    border-color: #ec4899;
+    color: #ffffff; /* Pastikan teks putih */
+}
+
+.btn-success:hover {
+    background-color: #db2777; /* Pink yang sedikit lebih gelap saat hover */
+    border-color: #db2777;
+    color: #ffffff;
+}
+
+/* Tombol Info (Lihat) */
+.btn-info {
+    background-color: #f472b6; /* Pink terang */
+    border-color: #f472b6;
+    color: #ffffff;
+}
+
+.btn-info:hover {
+    background-color: #ec4899;
+    border-color: #ec4899;
+    color: #ffffff;
+}
+
+/* Tombol Warning (Edit) */
+.btn-warning {
+    background-color: #fbbf24; /* Kuning untuk tetap kontras */
+    border-color: #fbbf24;
+    color: #521b41; /* Teks gelap */
+}
+
+.btn-warning:hover {
+    background-color: #f59e0b;
+    border-color: #f59e0b;
+    color: #521b41;
+}
+
+/* Tombol Danger (Hapus) */
+.btn-danger {
+    background-color: #ffc3d0; /* Pink merah */
+    border-color: #ffd3dc;
+    color: #ffffff;
+}
+
+.btn-danger:hover {
+    background-color: #ffcad7;
+    border-color: #ffd6e0;
+    color: #ffffff;
+}
+
+/* Tombol Secondary (Batal) */
+.btn-secondary {
+    background-color: #a78bfa; /* Ungu pastel untuk kontras */
+    border-color: #a78bfa;
+    color: #ffffff;
+}
+
+.btn-secondary:hover {
+    background-color: #8b5cf6;
+    border-color: #8b5cf6;
+    color: #ffffff;
+}
+
+/* 5. FORMS (Halaman Create & Edit) */
+.form-control, .form-select {
+    border-radius: 10px;
+    border: 1px solid #fbcfe8; /* Border pink sangat muda */
+    background-color: #ffffff;
+    color: #521b41;
+}
+
+/* Warna fokus form */
+.form-control:focus, .form-select:focus {
+    border-color: #ec4899;
+    box-shadow: 0 0 0 0.2rem rgba(236, 72, 153, 0.25);
+}
+
+/* Label form */
+.form-label {
+    color: #9f2750; /* Label menggunakan pink tua */
+    font-weight: 500;
+}
+
+/* 6. HALAMAN DETAIL */
+/* Label di halaman detail */
+.detail-label {
+    font-weight: 600;
+    color: #9f2750; /* Pink tua */
+}
+
+/* Card header di halaman detail dan edit */
+.card-header.bg-success {
+    background-color: #ec4899 !important; /* Gunakan pink cerah untuk header */
+    color: #ffffff;
+}
+
+.card-header.bg-warning {
+    background-color: #fbbf24 !important; /* Header edit tetap kuning */
+    color: #521b41;
+}
+
+/* 7. PAGINATION */
+/* Warna link pagination */
+.page-link {
+    color: #ffe9f1; /* Pink tua */
+    border-color: #fbcfe8; /* Border pink muda */
+}
+
+/* Warna saat hover */
+.page-link:hover {
+    color: #ffffff;
+    background-color: #ec4899; /* Background pink cerah saat hover */
+    border-color: #ec4899;
+}
+
+/* Warna untuk halaman aktif */
+.page-item.active .page-link {
+    background-color: #723e50; /* Pink tua untuk halaman aktif */
+    border-color: #ffd6e4;
+}
+
+/* 8. ALERTS (Pesan Sukses/Error) */
+.alert-success {
+    background-color: #ceffe6; /* Hijau muda untuk sukses */
+    border-color: #a7f3d0;
+    color: #ffd3d3;
+}
+
+.alert-danger {
+    background-color: #fee2e2; /* Merah muda untuk error */
+    border-color: #fecaca;
+    color: #ffcccc;
+}
+
+/* 9. UTILITIES */
+.search-bar {
+    max-width: 500px;
+}
+
+/* --- CSS MANUAL UNTUK HEADER FORM --- */
+#form-header {
+    background-color: #ec4899; /* Warna pink cerah yang Anda inginkan */
+    color: #ffffff; /* Warna teks putih */
+    border-radius: 15px 15px 0 0; /* Biarkan sudut atasnya melengkung mengikuti card */
+}
