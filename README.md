@@ -33,4 +33,5 @@ Jalankan Apache dan MySQL.
 
 🧩 Langkah 2: Konfigurasi Database
 Buat database baru:
+
 CREATE DATABASE db_daribontang;
