@@ -1,8 +1,8 @@
-# Aplikasi Manajemen Toko Bunga (Florist CRUD) 💐
+# 💐 Aplikasi Manajemen Toko Bunga (Florist CRUD)
 
 Aplikasi CRUD (Create, Read, Update, Delete) untuk mengelola katalog bunga di toko bunga, dibangun dengan PHP native dan database MySQL.
 
-## Fitur ⚙️
+## ⚙️ Fitur
 
 - **Create**: Menambahkan bunga baru ke katalog dengan informasi lengkap (nama, harga, stok, deskripsi, gambar, dll.).
 - **Read**: Menampilkan katalog bunga dalam bentuk kartu yang menarik.
@@ -16,13 +16,21 @@ Aplikasi CRUD (Create, Read, Update, Delete) untuk mengelola katalog bunga di to
 - **Keamanan**: Perlindungan terhadap SQL Injection dan XSS.
 - **Desain Responsif**: Tampilan yang menarik dan dapat diakses di berbagai perangkat.
 
-## Kebutuhan Sistem 📚
+## 📚 Kebutuhan Sistem
 
 - PHP 8.0 atau lebih tinggi
 - MySQL 5.7 atau lebih tinggi
 - Web server (Apache, Nginx, dll.)
 - Koneksi internet (untuk mengambil gambar dari URL dan Bootstrap CDN)
 
-## Cara Instalasi dan Konfigurasi 👩🏻‍💻
+## 👩🏻‍💻 Cara Instalasi dan Konfigurasi
 
-1. **Clone repositori**:
+🧩 Langkah 1: Kloning dan Penempatan File
+Letakkan folder florist-crud ke dalam direktori server:
+htdocs → jika menggunakan XAMPP
+www → jika menggunakan Laragon
+Jalankan Apache dan MySQL.
+
+🧩 Langkah 2: Konfigurasi Database
+Buat database baru:
+CREATE DATABASE db_daribontang;
