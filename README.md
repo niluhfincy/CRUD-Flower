@@ -78,10 +78,10 @@ INSERT INTO flowers (name, latin_name, price, stock, description, image_url, cat
 ('Karangan Bunga Duka', 'Standing Wreath', 500000, 5, 'Karangan bunga standing elegan untuk mengungkapkan belasungkawa dengan penuh penghormatan.', 'https://images.unsplash.com/photo-1606090958453-9e4ed226f503?w=500', 'Karangan Bunga', 'Putih');
 ````
 
-🧩 Langkah 3: Akses Aplikasi di browser
+### 🧩 Langkah 3: Akses Aplikasi di browser
 http://localhost/florist-crud
 
-
+---
 ## 📂 Struktur Folder
 
 ```
@@ -103,9 +103,34 @@ florist-crud/
 │ ├── view.php
 │ └── delete.php
 ├── .env.example
-├── .gitignore
 ├── README.md
 ├── index.php
-└── database.sql
 
 ````
+---
+
+## 🧾 Contoh Environment Config
+
+Jika ingin menggunakan file `.env` sebagai pengganti `config/database.php`, buat file baru bernama `.env` di folder utama:
+
+```env
+# Konfigurasi Database
+DB_HOST=localhost
+DB_PORT=3306
+DB_DATABASE=florist_shop
+DB_USERNAME=root
+DB_PASSWORD=
+
+# Pengaturan Aplikasi
+APP_NAME="Florist Shop"
+APP_URL=http://localhost/florist-crud
+APP_ENV=local
+APP_DEBUG=true
+```
+
+## 🖼️ Screenshot Aplikasi
+
+### Beranda/Katalog
+<img width="1469" height="1286" alt="Screenshot 2025-10-30 194028" src="https://github.com/user-attachments/assets/0e0af46c-4901-4343-965e-00ab46662399" />
+
+
