@@ -2,6 +2,8 @@
 
 Aplikasi CRUD (Create, Read, Update, Delete) untuk mengelola katalog bunga di toko bunga, dibangun dengan PHP native dan database MySQL.
 
+---
+
 ## ⚙️ Fitur
 
 - **Create**: Menambahkan bunga baru ke katalog dengan informasi lengkap (nama, harga, stok, deskripsi, gambar, dll.).
@@ -19,7 +21,7 @@ Aplikasi CRUD (Create, Read, Update, Delete) untuk mengelola katalog bunga di to
 ---
 
 ## 📚 Kebutuhan Sistem
----
+
 - PHP 8.0 atau lebih tinggi
 - MySQL 5.7 atau lebih tinggi
 - Web server (Apache, Nginx, dll.)
@@ -29,16 +31,17 @@ Aplikasi CRUD (Create, Read, Update, Delete) untuk mengelola katalog bunga di to
 
 ## 👩🏻‍💻 Cara Instalasi dan Konfigurasi
 
-🧩 Langkah 1: Kloning dan Penempatan File
+### 🧩 Langkah 1: Kloning dan Penempatan File
 Letakkan folder florist-crud ke dalam direktori server:
 
 htdocs → jika menggunakan XAMPP
 www → jika menggunakan Laragon
 Jalankan Apache dan MySQL.
 
-🧩 Langkah 2: Konfigurasi Database
+### 🧩 Langkah 2: Konfigurasi Database
 1. Buat database baru:
 
+````
 CREATE DATABASE florist_shop;
 
 2. Buka file config/database.php. Sesuaikan konfigurasi:
@@ -73,6 +76,7 @@ INSERT INTO flowers (name, latin_name, price, stock, description, image_url, cat
 ('Buket Pengantin', 'Mixed Bouquet', 350000, 10, 'Buket eksklusif campuran mawar, lily, dan baby breath yang dirangkai khusus untuk hari istimewa Anda.', 'https://images.unsplash.com/photo-1561181286-d5e66d0a9a53?w=500', 'Buket', 'Campuran'),
 ('Tulip Kuning', 'Tulipa gesneriana', 65000, 40, 'Melambangkan kebahagiaan dan persahabatan, tulip kuning ceria menyegarkan ruangan mana pun.', 'https://images.unsplash.com/photo-1589256970683-2f23c1b6f6c7?w=500', 'Bunga Potong', 'Kuning'),
 ('Karangan Bunga Duka', 'Standing Wreath', 500000, 5, 'Karangan bunga standing elegan untuk mengungkapkan belasungkawa dengan penuh penghormatan.', 'https://images.unsplash.com/photo-1606090958453-9e4ed226f503?w=500', 'Karangan Bunga', 'Putih');
+````
 
 🧩 Langkah 3: Akses Aplikasi di browser
 http://localhost/florist-crud
