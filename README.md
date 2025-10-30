@@ -27,11 +27,45 @@ Aplikasi CRUD (Create, Read, Update, Delete) untuk mengelola katalog bunga di to
 
 🧩 Langkah 1: Kloning dan Penempatan File
 Letakkan folder florist-crud ke dalam direktori server:
+
 htdocs → jika menggunakan XAMPP
 www → jika menggunakan Laragon
 Jalankan Apache dan MySQL.
 
 🧩 Langkah 2: Konfigurasi Database
-Buat database baru:
+1. Buat database baru:
 
-CREATE DATABASE db_daribontang;
+CREATE DATABASE florist_shop;
+
+2. Buka file config/database.php. Sesuaikan konfigurasi:
+
+    private $host = 'localhost';
+    private $db_name = 'florist_shop';
+    private $username = 'root';
+    private $password = '';
+    private $conn;
+
+3. Jalankan query SQL berikut untuk membuat tabel:
+
+CREATE TABLE IF NOT EXISTS flowers (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    latin_name VARCHAR(100),
+    price DECIMAL(10, 2) NOT NULL,
+    stock INT NOT NULL DEFAULT 0,
+    description TEXT,
+    image_url VARCHAR(255),
+    category ENUM('Bunga Potong', 'Tanaman Hias', 'Buket', 'Karangan Bunga') NOT NULL,
+    color VARCHAR(50),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+-- Insert some sample data
+INSERT INTO flowers (name, latin_name, price, stock, description, image_url, category, color) VALUES
+('Mawar Merah', 'Rosa rubiginosa', 75000, 50, 'Simbol cinta dan kasih sayang, mawar merah klasik sempurna untuk berbagai occasions.', 'https://images.unsplash.com/photo-1518709594023-cce4d510b697?w=500', 'Bunga Potong', 'Merah'),
+('Anggrek Bulan', 'Phalaenopsis amabilis', 120000, 30, 'Bunga nasional Indonesia yang elegan dengan daya tahan lama dan keindahan yang memukau.', 'https://images.unsplash.com/photo-1530103834929-0c5f98b15221?w=500', 'Tanaman Hias', 'Putih'),
+('Lily Putih', 'Lilium candidum', 85000, 25, 'Melambangkan kesucian dan keanggunan, lily putih menambah sentuhan kemewahan pada rangkaian bunga.', 'https://images.unsplash.com/photo-1599424256974-3e250e7173a4?w=500', 'Bunga Potong', 'Putih'),
+('Buket Pengantin', 'Mixed Bouquet', 350000, 10, 'Buket eksklusif campuran mawar, lily, dan baby breath yang dirangkai khusus untuk hari istimewa Anda.', 'https://images.unsplash.com/photo-1561181286-d5e66d0a9a53?w=500', 'Buket', 'Campuran'),
+('Tulip Kuning', 'Tulipa gesneriana', 65000, 40, 'Melambangkan kebahagiaan dan persahabatan, tulip kuning ceria menyegarkan ruangan mana pun.', 'https://images.unsplash.com/photo-1589256970683-2f23c1b6f6c7?w=500', 'Bunga Potong', 'Kuning'),
+('Karangan Bunga Duka', 'Standing Wreath', 500000, 5, 'Karangan bunga standing elegan untuk mengungkapkan belasungkawa dengan penuh penghormatan.', 'https://images.unsplash.com/photo-1606090958453-9e4ed226f503?w=500', 'Karangan Bunga', 'Putih');
