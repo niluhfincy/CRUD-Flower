@@ -130,7 +130,11 @@ APP_DEBUG=true
 
 ## 🖼️ Screenshot Aplikasi
 
-### Beranda/Katalog
+### 🏠 Beranda/Katalog
 <img width="1469" height="1286" alt="Screenshot 2025-10-30 194028" src="https://github.com/user-attachments/assets/0e0af46c-4901-4343-965e-00ab46662399" />
 
+### ➕ Tambah Bunga Baru
+<img width="2879" height="1508" alt="Screenshot 2025-10-30 194337" src="https://github.com/user-attachments/assets/5453784b-36b4-41f6-a1f6-46da9d1afc10" />
 
+### 👁️Melihat Detail Bunga
+<img width="1880" height="1456" alt="Screenshot 2025-10-30 194436" src="https://github.com/user-attachments/assets/c65d4a4e-d23e-44ee-9bfb-c208d75c633d" />
